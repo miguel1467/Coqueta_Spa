@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Imagen de Melody*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15%;
+}
+body{
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #350566b9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e100ff8a, #8000ff73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e100ffa8, #8000ffa6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+/* este es el resto de la pagina */
+}
+h1{
+    font-size-adjust: calc(1.2);
+    background:linear-gradient(50deg, #6b05be, #ee09b5 );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 10%;
+}
+/*Trabajos realizados*/
+h2{
+    text-align: center;
+    line-height: 5;
+}
+
+/*NO TOCAR*/
+p{
+    background:linear-gradient(50deg, #50095e, #941f77 );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size-adjust: calc(1);
+    text-align: center;
+    margin: 5%
+}
+   
+/* Aqui van las imagenes con el div osea las uñas*/
+.img{
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+    font-size: 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 200px 200px ;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(56, 4, 70);
+    font-style: italic;
+}
+h4{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(56, 4, 70);
+    font-style: italic;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+/*BOTON DE WHATSAPP*/
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before {
+  background: #000000;
+  color: #fff;
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background: #25d366;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+
+footer{
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.shadow{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, black, transparent);
+    z-index: -1;
+}
